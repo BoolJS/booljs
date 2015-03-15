@@ -18,5 +18,4 @@
 
 'use strict';
 
-var API = require('booljs-api');
-module.exports = require('./lib')(API);
+module.exports = require('./lib');

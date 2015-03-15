@@ -1,24 +1,26 @@
 {
-    "name": "bool.js",
-    "version": "0.0.1",
-    "description": "Bool MVC Framework - Bootstraping Unit",
-    "author": {
-        "name": "Pablo Andrés Dorado Suárez",
-        "email": "pandres95@boolinc.co",
-        "url": "http://pandres95.boolinc.co"
-    },
-    "main": "index.js",
-    "scripts": {
-        "test": "NODE_ENV=test --recursive test"
-    },
-    "repository": {
-        "type": "git",
-        "url": "http://github.com/boolinc/booljs"
-    },
-    "devDependencies": {
-        "expect.js": "~0.3.1"
-    },
-    "dependencies": {
-        "booljs-api": "booljs/booljs-api.git"
-    }
+  "name": "bool.js",
+  "version": "0.0.1",
+  "description": "Bool MVC Framework - Bootstraping Unit",
+  "author": {
+    "name": "Pablo Andrés Dorado Suárez",
+    "email": "pandres95@boolinc.co",
+    "url": "http://pandres95.boolinc.co"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha --recursive test",
+    "predoc": "rm -rf doc",
+    "doc": "jsdoc -c .jsdoc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/boolinc/booljs"
+  },
+  "devDependencies": {
+    "expect.js": "~0.3.1"
+  },
+  "dependencies": {
+    "booljs-api": "booljs/booljs-api.git",
+    "jsonfile": "^2.0.0"
+  }
 }

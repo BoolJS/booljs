@@ -6,9 +6,8 @@ describe('Configurations', function(){
 
         var files = ["db"];
 
-        booljs.configFolder(
-            "sample/config"
-        ).readFiles(function(err, name){
+        booljs.readFiles(function(err, name){
+
             if(err) done(err);
             else {
 

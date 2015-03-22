@@ -7,4 +7,11 @@ describe('Folders', function(){
         booljs('com.example.api').readFiles(done);
     });
 
+    it('Read folders returns a promise', function(done){
+
+        booljs('com.example.api').readFiles().then(function(){
+            done();
+        }).catch(done);
+    });
+
 });

@@ -6,7 +6,9 @@ describe('Configurations', function(){
 
         var files = ["db"];
 
-        booljs.readFiles(function(err, name){
+        booljs(
+            'com.example.api'
+        ).readFiles(function(err, name){
 
             if(err) done(err);
             else {

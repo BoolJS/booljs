@@ -5,11 +5,7 @@ describe('API', function(){
     it('initializes application instance', function(done){
 
         try{
-            booljs.init(
-                'com.example.api'
-            ).baseFolder(
-                'sample'
-            );
+            booljs('com.example.api').setBase('sample');
             done();
         } catch(err){
             done(err);

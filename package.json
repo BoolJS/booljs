@@ -1,6 +1,6 @@
 {
     "name": "bool.js",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "description": "Bool MVC Framework - Bootstraping Unit",
     "main": "lib/index.js",
     "author": {
@@ -22,7 +22,7 @@
     },
     "dependencies": {
         "async": "^0.9.0",
-        "booljs-api": "booljs/booljs-api.git",
+        "booljs-api": "0.0.2",
         "jsonfile": "^2.0.0"
     }
 }

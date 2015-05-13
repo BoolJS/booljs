@@ -18,6 +18,7 @@
         "url": "http://github.com/boolinc/booljs"
     },
     "devDependencies": {
+        "mocha": "^2.2.4",
         "expect.js": "^0.3.1"
     },
     "dependencies": {

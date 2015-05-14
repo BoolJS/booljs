@@ -27,5 +27,8 @@
         "coffee-script": "^1.9.1",
         "cson": "^3.0.1",
         "jsonfile": "^2.0.0"
+    },
+    "engine": {
+        "node": ">=0.12.0"
     }
 }

@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "http://github.com/boolinc/booljs"
+        "url": "http://github.com/booljs/booljs"
     },
     "devDependencies": {
         "mocha": "^2.2.4",

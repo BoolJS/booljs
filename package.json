@@ -28,7 +28,7 @@
         "cson": "^3.0.1",
         "jsonfile": "^2.0.0"
     },
-    "engine": {
+    "engines": {
         "node": ">=0.12.0"
     }
 }

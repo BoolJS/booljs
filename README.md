@@ -1,8 +1,10 @@
 # Bool.js
 
-[![Join the chat at https://gitter.im/BoolJS/booljs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BoolJS/booljs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Codeship Status for BoolJS/booljs](https://codeship.com/projects/39af8de0-db3c-0132-e370-5ad94843e341/status?branch=master)](https://codeship.com/projects/79577) [![Dependencies status for bool.js](https://david-dm.org/booljs/booljs.svg)](https://david-dm.org/booljs/booljs)
+[![Codeship Status for BoolJS/booljs](https://codeship.com/projects/39af8de0-db3c-0132-e370-5ad94843e341/status?branch=master)](https://codeship.com/projects/79577) [![Dependencies status for bool.js](https://david-dm.org/booljs/booljs.svg)](https://david-dm.org/booljs/booljs) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs)
 
 [![Bool.js NPM icon](https://nodei.co/npm/bool.js.png)](https://npmjs.com/packages/bool.js)
+
+[![Join the chat at https://gitter.im/BoolJS/booljs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BoolJS/booljs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## FAQ
 

@@ -5,6 +5,8 @@
     "undef": false,
     "predef": [
         "PATH",
+        "log",
         "q"
+
     ]
 }

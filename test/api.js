@@ -1,16 +1,10 @@
-var booljs = require('..');
+/* global describe, it */
+"use strict";
 
 describe('API', function(){
-
-    it('initializes application instance', function(done){
-
-        try{
-            booljs('com.example.api').setBase('sample');
-            done();
-        } catch(err){
-            done(err);
-        }
-
+    it('initializes application instance', function(){
+        var booljs  = require('..')
+        ,   app     = booljs('com.example.api');
+        return q.nbind(app.setBase('example'), app);
     });
-
 });

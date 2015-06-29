@@ -1,0 +1,10 @@
+{
+    "node": true,
+    "laxcomma": true,
+    "unused": false,
+    "undef": false,
+    "predef": [
+        "PATH",
+        "q"
+    ]
+}

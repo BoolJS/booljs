@@ -1,6 +1,0 @@
-files:
-    included:
-        - lib/*/**.js
-        - lib/*.js
-    excluded:
-        - {example, test}/**.js

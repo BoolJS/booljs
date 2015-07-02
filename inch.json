@@ -1,8 +1,11 @@
 {
-    "include": [
-        "lib/"
-    ],
-    "excluded": [
-        "lib/index.js"
-    ]
+    "files": {
+        "included": [
+            "lib/"
+        ],
+        "excluded": [
+            "lib/index.js"
+        ]
+    }
+
 }

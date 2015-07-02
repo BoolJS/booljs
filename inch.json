@@ -2,7 +2,7 @@
     "include": [
         "lib/"
     ],
-    "ignore": [
+    "excluded": [
         "lib/index.js"
     ]
 }

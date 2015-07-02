@@ -1,0 +1,8 @@
+{
+    "include": [
+        "lib/"
+    ],
+    "exclude": [
+        "lib/index.js"
+    ]
+}

@@ -3,6 +3,7 @@
     "version": "0.0.4",
     "description": "Bool MVC Framework - Bootstraping Unit",
     "main": "lib/index.js",
+    "license": "GPL-3.0",
     "author": {
         "name": "Pablo Andrés Dorado Suárez",
         "email": "pandres95@gentebool.com",
@@ -11,7 +12,7 @@
     "scripts": {
         "test": "NODE_ENV=test mocha --recursive test",
         "predoc": "rm -rf doc",
-        "doc": "jsdoc -c ./jsdoc.json"
+        "doc": "jsdoc -c jsdoc.json"
     },
     "repository": {
         "type": "git",

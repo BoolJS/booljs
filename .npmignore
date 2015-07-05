@@ -1,10 +1,8 @@
-.DS_Store
-
 example
 test
 
 .gitignore
-.jsdoc
 .jshintrc
 .travis.yml
+jsdoc.json
 inch.json

@@ -11,7 +11,7 @@
     "scripts": {
         "test": "NODE_ENV=test mocha --recursive test",
         "predoc": "rm -rf doc",
-        "doc": "jsdoc -c .jsdoc"
+        "doc": "jsdoc -c ./jsdoc.json"
     },
     "repository": {
         "type": "git",

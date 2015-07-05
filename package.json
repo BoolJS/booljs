@@ -5,8 +5,8 @@
     "main": "lib/index.js",
     "author": {
         "name": "Pablo Andrés Dorado Suárez",
-        "email": "pandres95@boolinc.co",
-        "url": "http://pandres95.boolinc.co"
+        "email": "pandres95@gentebool.com",
+        "url": "http://community.gentebool.com/pandres95"
     },
     "scripts": {
         "test": "NODE_ENV=test mocha --recursive test",

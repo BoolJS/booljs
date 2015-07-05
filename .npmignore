@@ -1,7 +1,10 @@
-test
-sample
-.jsdoc
-.gitignore
 .DS_Store
-LICENSE
-README.md
+
+example
+test
+
+.gitignore
+.jsdoc
+.jshintrc
+.travis.yml
+inch.json

@@ -1,5 +1,5 @@
 /* global describe, before, it */
-"use strict";
+'use strict';
 
 describe('Folders', function(){
     var booljs;

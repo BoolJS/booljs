@@ -1,5 +1,5 @@
 /* global describe, it */
-"use strict";
+'use strict';
 
 describe('API', function(){
     it('initializes application instance', function(){

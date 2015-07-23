@@ -13,6 +13,8 @@ describe('Configuration', function(){
     });
 
     it('return a promise', function(){
-        return booljs('com.new.api').setBase('example').readConfigurations();
+        return booljs('com.example.api2').setBase(
+            'example'
+        ).readConfigurations();
     });
 });

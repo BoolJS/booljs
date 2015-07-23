@@ -5,6 +5,7 @@
     "undef": false,
     "predef": [
         "PATH",
+        "injector",
         "log",
         "q",
         "_"

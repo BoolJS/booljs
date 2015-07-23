@@ -6,11 +6,11 @@ describe('Folders', function(){
 
     before(function () { booljs = require('..'); });
 
-    it('Reads folders and creates initial pre-structure', function(done){
+    it('create initial pre-structure', function(done){
         booljs('com.example.api').readFiles(done);
     });
 
-    it('Read folders returns a promise', function(){
+    it('return a promise', function(){
         return booljs('com.example.api').readFiles();
     });
 });

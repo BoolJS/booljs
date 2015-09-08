@@ -1,0 +1,18 @@
+{
+
+    "development": {
+        "host": "localhost",
+        "database": "db"
+    },
+
+    "test": {
+        "host": "localhost",
+        "database": "db_test"
+    },
+
+    "production": {
+        "host": "example.com",
+        "database": "db"
+    }
+
+}

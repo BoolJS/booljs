@@ -6,11 +6,11 @@ module.exports = function (app) {
 
     return {
         list: function () {
-            return dogs;
+            return q.resolve(dogs);
         },
         index: function (id) {
             for(var dog in dogs){
-                if(dogs[dog].id === id) return dog;
+                if(dogs[dog].id === id) return q.resolve(dog);
             }
             return null;
         },
@@ -19,7 +19,7 @@ module.exports = function (app) {
             if(index === null) throw new app.Error(
                 404, 'dog_not_found', 'The searched dog wasn\'t in the list'
             );
-            return dogs[index];
+            return q.resolve(dogs[index]);
         },
         update: function (id, dog) {
             injector(this.find(id), dog);

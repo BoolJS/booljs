@@ -3,15 +3,12 @@
 module.exports = function(app){
 
     var Dog     = app.dao.Dog
-    ,   json    = app.views.json;
+    ,   json    = new app.views.Json();
 
     return {
         list: function(req, res, next){
             var dog = new Dog();
-
-            dog.list().then(function(dogs){
-                json(dogs, res);
-            }).catch(next);
+            json.promise(dog.list(), res, next);
         }
     };
 

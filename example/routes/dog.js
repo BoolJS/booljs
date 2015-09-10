@@ -7,6 +7,7 @@ module.exports = function (app) {
     return [
         {
             method: 'get',
+            url: '/dog',
             action: dog.list,
             cors: true
         }

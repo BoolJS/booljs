@@ -2,7 +2,7 @@
 
 var dogs = [];
 
-module.exports = function () {
+module.exports = function (app) {
 
     return {
         list: function () {

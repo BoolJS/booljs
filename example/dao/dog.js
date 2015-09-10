@@ -2,11 +2,11 @@
 
 module.exports = function(app){
 
-    var Dog = app.db.Dog;
+    var Dog = app.models.Dog;
 
     return {
         list: function(){
-            return Dog.list();
+            return new Dog().list();
         }
     };
 

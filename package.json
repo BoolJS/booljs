@@ -31,7 +31,7 @@
     "booljs-api": "^0.1.2",
     "booljs-cli": "0.0.1",
     "booljs-express": "^0.1.4",
-    "booljs-nomodel": "^0.0.3",
+    "booljs-nomodel": "^0.0.4",
     "coffee-script": "^1.9.1",
     "cson": "^3.0.1",
     "jsonfile": "^2.0.0"

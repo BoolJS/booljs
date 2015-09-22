@@ -31,17 +31,21 @@
 /**
  * @alias module:booljs
  * @description Gets a bootstraper instance of a bool.js application
- * @param  {String} namespace   The namespace for the application
- * @return {Object}             The instance of a bool.js loaded application
+ * @param  {String} namespace - The namespace for the application
+ * @param  {String[]} [dependencies] - A list of packages to be loaded with
+ * application
+ * @return {Object} The instance of a bool.js loaded application
  */
-module.exports = function(namespace){
+module.exports = function(namespace, dependencies){
 
     var API         = require('booljs-api')
     ,   Folder      = require('./folder')
     ,   Config      = require('./configurations')
     ,   Loaders     = require('./loaders');
 
-    var _instance   = API.App.getInstance(namespace)
+    var _instance   = API.App.getInstance(
+        namespace, _.union(dependencies, [ 'booljs-express', 'booljs-nomodel' ])
+    )
     ,   _folders    = new Folder.List()
     ,   _dbloader   = 'booljs-nomodel'
     ,   _srvloader  = 'booljs-express'
@@ -50,8 +54,9 @@ module.exports = function(namespace){
 
     return {
         /**
-         * @function
-         * Sets a base folder for project, can be absolute or relative
+         * @function module:booljs#setBase
+         * @description Sets a base folder for project, can be absolute or
+         * relative
          * @param {String} folder - the project's location.
          * @return {Object} The loaded application instance
          */
@@ -60,9 +65,9 @@ module.exports = function(namespace){
             return this;
         },
         /**
-         * @function
-         * Modifies standard folder names for components or even add new ones
-         * to the projects structure
+         * @function booljs#setFolder
+         * @description Modifies standard folder names for components or even
+         * add new ones to the projects structure
          * @param {String} key - The identifier of the resource or resources
          * group to be relocated
          * @param {String} folder - An absolute or relative location to point
@@ -74,9 +79,9 @@ module.exports = function(namespace){
             return this;
         },
         /**
-         * @function
-         * Sets the name of a database loader for the project. Default loader
-         * is mongoose driver for bool.js
+         * @function module:booljs#setDatabaseLoader
+         * @description Sets the name of a database loader for the project.
+         * Default loader is mongoose driver for bool.js
          * @param {String} databaseLoader - The name of the module or route
          * where the loader is being required from node.js
          * @return {Object} The loaded application instance
@@ -86,9 +91,9 @@ module.exports = function(namespace){
             return this;
         },
         /**
-         * @function
-         * Sets the name of a server loader for the project. Default loader
-         * is express driver for bool.js
+         * @function module:booljs#setServerLoader
+         * @description Sets the name of a server loader for the project.
+         * Default loader is express driver for bool.js
          * @param {String} serverLoader - The name of the module or route
          * where the loader is being required from node.js
          * @return {Object} The loaded application instance
@@ -98,9 +103,11 @@ module.exports = function(namespace){
             return this;
         },
         /**
-         * @function
-         * Adds BoolError to app components, so it can be used in application,
-         * @param {Callback} done - Executes once process is complete.
+         * @function module:booljs#insertBoolError
+         * @description Adds BoolError to app components, so it can be used in
+         * application,
+         * @param {module:booljs-doneCallback} [done] - Executes once process
+         * is complete.
          * @return {Object} The loaded application instance
          */
         insertBoolError: function (done) {
@@ -116,12 +123,13 @@ module.exports = function(namespace){
             }
         },
         /**
-         * @function
-         * Reads configurations. Gives hints about progress to notify user
-         * what is happening.
-         * @param {Callback} done - Executes when reading process is complete.
-         * @param {Callback} progress - Executes once a single configuration
-         * file has been read.
+         * @function module:booljs#readConfigurations
+         * @description Reads configurations. Gives hints about progress to
+         * notify user what is happening.
+         * @param {module:booljs-doneCallback} done - Executes when reading
+         * process is complete.
+         * @param {module:booljs-progressCallback} progress - Executes once a
+         * single configuration file has been read.
          * @return {Promise}
          */
         readConfigurations: function(done, progress){
@@ -130,12 +138,13 @@ module.exports = function(namespace){
             );
         },
         /**
-         * @function
-         * Returns a list of the components' code files, so it's possible to
-         * use them later to load code components
-         * @param {Callback} done - Executes when reading process is complete.
-         * @param {Callback} progress - Executes once a single configuration
-         * file has been read.
+         * @function module:booljs#readFiles
+         * @description Returns a list of the components' code files, so it's
+         * possible to use them later to load code components
+         * @param {module:booljs-doneCallback} done - Executes when reading
+         * process is complete.
+         * @param {module:booljs-progressCallback} progress - Executes once a
+         * single file has been read.
          * @return {Promise}
          */
         readFiles: function(done, progress){
@@ -158,48 +167,37 @@ module.exports = function(namespace){
             }).catch(done);
         },
         /**
-         * @function
-         * Opens a Database connection and fetches models using a database
-         * loader.
-         * @param {Callback} done - Executes when reading process is complete.
-         * @param {Callback} progress - Executes once a single configuration
-         * file has been read.
+         * @function module:booljs#loadDatabase
+         * @description Opens a Database connection and fetches models using a
+         * database loader.
          * @return {Promise}
          */
-        loadDatabase: function (done, progress) {
-            done = done || function () {};
-            return Loaders.database(_instance, _dbloader, done, progress);
+        loadDatabase: function () {
+            return Loaders.database(_instance, _dbloader);
         },
         /**
-         * @function
-         * Loads up components' code, wrapping them into objects
-         * @param {Callback} done - Executes when reading process is complete.
-         * @param {Callback} progress - Executes once a single configuration
-         * file has been read.
+         * @function module:booljs#loadComponents
+         * @description Loads up components' code, wrapping them into objects
          * @return {Promise}
          */
-        loadComponents: function (done, progress) {
-            done = done || function () {};
-
-            return Loaders.components(_folders, _instance, done, progress);
+        loadComponents: function () {
+            return Loaders.components(_folders, _instance);
         },
         /**
-         * @function
-         * Configures and boots up server
-         * @param {Callback} done - Executes when reading process is complete.
-         * @param {Callback} progress - Executes once a single configuration
-         * file has been read.
+         * @function module:booljs#bootServer
+         * @description Configures and boots up server
          * @return {Promise}
          */
-        bootServer: function (done, progress) {
-            done = done || function () {};
-            return Loaders.server(_instance, _srvloader, done, progress);
+        bootServer: function () {
+            return Loaders.server(_instance, _srvloader);
         },
         /**
-         * Boots up bool.js
-         * @param {Callback} done - Executes when reading process is complete.
-         * @param {Callback} progress - Executes once a single configuration
-         * file has been read.
+         * @function module:booljs#run
+         * @description Boots up bool.js
+         * @param {module:booljs-doneCallback} done - Executes when booting
+         * process is complete.
+         * @param {Callback} progress - Executes once a single steps have been
+         * executed
          * @return {Promise}
          */
         run: function (done, progress) {
@@ -215,8 +213,8 @@ module.exports = function(namespace){
 
             return context.
                 insertBoolError().
-            readConfigurations().then(function () {
-                return context.readFiles();
+            readConfigurations(undefined, progress).then(function () {
+                return context.readFiles(undefined, progress);
             }).then(function () {
                 return context.loadDatabase();
             }).then(function () {
@@ -227,6 +225,10 @@ module.exports = function(namespace){
                 _server = server;
                 _booted = true;
 
+                done(undefined, {
+                    app: _instance.getComponents(),
+                    server: _server
+                });
                 return q.resolve({
                     app: _instance.getComponents(),
                     server: _server
@@ -234,6 +236,17 @@ module.exports = function(namespace){
             });
         }
     };
+
+    /**
+     * @callback module:booljs~progressCallback
+     * @param {Object} [data] - Indicates which data has been progressing.
+     */
+
+    /**
+     * @callback module:booljs~doneCallback
+     * @param {Error} err - Shows error in case it happened
+     * @param {Object} data - Retrieves final data
+     */
 
 };
 </code></pre>
@@ -246,19 +259,13 @@ module.exports = function(namespace){
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-booljs.html">booljs</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Configuresandbootsupserver">Configures and boots up server</a></li><li><a href="global.html#Modifiesstandardfoldernamesforcomponentsorevenaddnewonestotheprojectsstructure">Modifies standard folder names for components or even add new ones
-to the projects structure</a></li><li><a href="global.html#OpensaDatabaseconnectionandfetchesmodelsusingadatabaseloader.">Opens a Database connection and fetches models using a database
-loader.</a></li><li><a href="global.html#Readsconfigurations.Giveshintsaboutprogresstonotifyuserwhatishappening.">Reads configurations. Gives hints about progress to notify user
-what is happening.</a></li><li><a href="global.html#Returnsalistofthecomponents'codefiles,soit'spossibletousethemlatertoloadcodecomponents">Returns a list of the components' code files, so it's possible to
-use them later to load code components</a></li><li><a href="global.html#run">run</a></li><li><a href="global.html#Setsthenameofadatabaseloaderfortheproject.Defaultloaderismongoosedriverforbool.js">Sets the name of a database loader for the project. Default loader
-is mongoose driver for bool.js</a></li><li><a href="global.html#Setsthenameofaserverloaderfortheproject.Defaultloaderisexpressdriverforbool.js">Sets the name of a server loader for the project. Default loader
-is express driver for bool.js</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-booljs.html">booljs</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Sat Sep 12 2015 19:23:06 GMT-0500 (COT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a> on Tue Sep 22 2015 00:28:45 GMT-0500 (COT)
 </footer>
 
 <script> prettyPrint(); </script>

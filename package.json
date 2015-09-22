@@ -1,10 +1,6 @@
 {
   "name": "bool.js",
-<<<<<<< HEAD
-  "version": "0.3.0",
-=======
   "version": "0.3.1",
->>>>>>> Updated dependencies
   "description": "Bool MVC Framework - Bootstraping Unit",
   "main": "lib/index.js",
   "license": "GPL-3.0",

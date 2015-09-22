@@ -1,6 +1,6 @@
 {
   "name": "bool.js",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "description": "Bool MVC Framework - Bootstraping Unit",
   "main": "lib/index.js",
   "license": "GPL-3.0",
@@ -9,8 +9,8 @@
     "email": "pandres95@gentebool.com",
     "url": "http://community.gentebool.com/pandres95"
   },
-  "bin":{
-      "bool": "bin/bool.js"
+  "bin": {
+    "bool": "bin/bool.js"
   },
   "scripts": {
     "test": "NODE_ENV=test mocha --recursive test",
@@ -28,7 +28,7 @@
   },
   "dependencies": {
     "async": "^1.2.1",
-    "booljs-api": "^0.1.3",
+    "booljs-api": "^0.2.0",
     "booljs-cli": "0.0.1",
     "booljs-express": "^0.1.6",
     "booljs-nomodel": "^0.0.5",

@@ -13,7 +13,7 @@
     "bool": "bin/bool.js"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha --recursive test",
+    "test": "NODE_ENV=test mocha --timeout 5000 --recursive test",
     "predoc": "rm -rf doc",
     "doc": "jsdoc -c jsdoc.json"
   },

@@ -1,5 +1,6 @@
 {
     "node": true,
+    "esnext": true,
     "laxcomma": true,
     "unused": false,
     "undef": false,

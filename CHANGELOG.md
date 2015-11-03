@@ -4,6 +4,7 @@ _Changelog_
 
 # 0.4.0: Banana Smoothie
 [_3 November 2015_](https://github.com/BoolJS/booljs/commits/v0.4.0)
+
 <img alt="Naked Brothers Band" src="https://upload.wikimedia.org/wikipedia/en/b/b0/NBB_Album_Cover.jpg" height="300px">
 
 * Using new API resources

@@ -28,10 +28,10 @@
   },
   "dependencies": {
     "async": "^1.2.1",
-    "booljs-api": "^0.2.2",
+    "booljs-api": "^0.2.3",
     "booljs-cli": "1.1.1",
     "booljs-express": "^0.3.3",
-    "booljs-nomodel": "^0.2.1",
+    "booljs-nomodel": "^0.3.0",
     "coffee-script": "^1.9.1",
     "cson": "^3.0.1",
     "jsonfile": "^2.0.0",

@@ -31,6 +31,8 @@ _Changelog_
 # 0.3.0: Everybody's Changing
 [_22 September 2015_](https://github.com/BoolJS/booljs/commits/v0.3.0)
 
+<img alt="Hopes And Fears" src="https://ia700702.us.archive.org/0/items/mbid-df6d6bc4-53c1-43e8-9008-a52e6c2c9852/mbid-df6d6bc4-53c1-43e8-9008-a52e6c2c9852-6784289434.jpg" height="300px">
+
 * New endpoint to allow plugins use integrated API version, instead of global (use this with caution).
 * Plugins store improved.
 
@@ -46,6 +48,8 @@ _Changelog_
 
 # 0.2.0: It's The End Of The World As We Know It (And I Feel Fine)
 [_22 September 2015_](https://github.com/BoolJS/booljs/commits/v0.2.0)
+
+<img alt="It's The End Of The World As We Know It (And I Feel Fine)" src="https://ia802709.us.archive.org/26/items/mbid-30e4cd2e-1d3e-4e43-bc44-8cb3395102e5/mbid-30e4cd2e-1d3e-4e43-bc44-8cb3395102e5-2647873120.jpg" height="300px">
 
 * Implemented plugins from API
 * Better support for more providers
@@ -87,6 +91,8 @@ _Changelog_
 
 # 0.1.0: All Together Now
 [_10 September 2015_](https://github.com/BoolJS/booljs/commits/v0.1.0)
+
+<img alt="Yellow Submarine" src="https://ia800306.us.archive.org/27/items/mbid-98a627c2-190f-4bcc-a90c-459462dbf67b/mbid-98a627c2-190f-4bcc-a90c-459462dbf67b-1229882757.jpg" height="300px">
 
 * Using functional API.
 * Successfully loading project structure.

@@ -1,3 +1,8 @@
+<a href="http://booljs.co"><img width="200px" src="https://cdn.rawgit.com/BoolJS/booljs/master/logo.svg" alt="Bool.js" /></a>
+
+_Changelog_
+
+
 ## 0.3.5 
 [_28 October 2015_](https://github.com/BoolJS/booljs/commits/v0.3.5)
 

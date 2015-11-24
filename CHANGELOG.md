@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.4.1
+
+* Fixed issue in **booljs-express**. Applying dependency update.
+
 ## 0.4.0: Banana Smoothie
 [_3 November 2015_](https://github.com/BoolJS/booljs/commits/v0.4.0)
 

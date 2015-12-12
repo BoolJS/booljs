@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.4.2
+
+* Fix issue when loading folders
+
 ### 0.4.1
 
 * Fixed issue in **booljs-express**. Applying dependency update.

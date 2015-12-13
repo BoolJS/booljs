@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.4.4
+
+* Fixed bug in `booljs-express` where non-existing file caused undefined reference errors.
+
 ### 0.4.3
 
 * Updated `booljs-express` to allow configure server settings through `server` configuration file.

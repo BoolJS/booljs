@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.4.3
+
+* Updated `booljs-express` to allow configure server settings through `server` configuration file.
+
 ### 0.4.2
 
 * Fix issue when loading folders

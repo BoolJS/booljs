@@ -2,6 +2,12 @@
 
 _Changelog_
 
+## 0.5.0: People Are Strange
+
+<img alt="The Doors" src="https://d33goyr6pqlwpd.cloudfront.net/sites/thedoors/files/song_images/SD_USA-PeopleAreStrange7InchSleeve_IMPU09.jpg" height="300px">
+
+* Updated to latest spec of API, now bool.js is in charge of preparing middleware, route lists and passing them to ServerLoaders.
+
 ### 0.4.4
 
 * Fixed bug in `booljs-express` where non-existing file caused undefined reference errors.

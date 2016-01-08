@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.5.2
+
+* Fixed issue on listing Middleware plugins.
+
 ### 0.5.1
 
 * Fix the way middleware was being loaded in booljs bootstraping process.

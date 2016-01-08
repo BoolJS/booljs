@@ -7,6 +7,7 @@ _Changelog_
 * Fix the way middleware was being loaded in booljs bootstraping process.
 
 ## 0.5.0: People Are Strange
+[_24 December 2015_](https://github.com/BoolJS/booljs/commits/v0.5.0)
 
 <img alt="The Doors" src="https://d33goyr6pqlwpd.cloudfront.net/sites/thedoors/files/song_images/SD_USA-PeopleAreStrange7InchSleeve_IMPU09.jpg" height="300px">
 

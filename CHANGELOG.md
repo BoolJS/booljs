@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.5.3
+
+* [booljs-express] Fix at json view
+
 ### 0.5.2
 
 * Fixed issue on listing Middleware plugins.

@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.5.4
+
+* [booljs-express] Add suport for bodyParser options
+
 ### 0.5.3
 
 * [booljs-express] Fix at json view

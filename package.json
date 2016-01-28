@@ -30,7 +30,7 @@
     "async": "^1.2.1",
     "booljs-api": "^0.2.4",
     "booljs-cli": "1.1.1",
-    "booljs-express": "^0.4.2",
+    "booljs-express": "^0.4.3",
     "booljs-nomodel": "^0.3.0",
     "coffee-script": "^1.9.1",
     "cson": "^3.0.1",

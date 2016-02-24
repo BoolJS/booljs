@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.5.6
+
+* Update booljs-express
+
 ### 0.5.5
 
 * Minor fix in booljs-express

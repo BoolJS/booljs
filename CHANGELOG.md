@@ -2,6 +2,10 @@
 
 _Changelog_
 
+### 0.5.7
+
+* Fix- booljs-cors was having issues when sending extra headers. Fixed
+
 ### 0.5.6
 
 * Update booljs-express

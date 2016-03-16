@@ -2,6 +2,13 @@
 
 _Changelog_
 
+### 0.5.9
+
+* Updated booljs-api
+* Sort RouteMiddleware after selecting it. Use following criteria:
+  * Priority
+  * Name
+
 ### 0.5.8
 
 * Updated booljs-express

@@ -2,6 +2,22 @@
 
 _Changelog_
 
+## 0.6.0: (I Can't Get No) Satisfaction
+[_10 May 2016_](https://github.com/BoolJS/booljs/commits/v0.6.0)
+
+<img alt="(I Can't Get No) Satisfaction" src="http://eurohittop40.ru/images/discs/31509/31509.jpg" height="300px">
+
+* Changes in the way plugins are:
+  - Defined
+  - Loaded
+  - Stored
+* Gives more responsibilities to the application instance.
+* Enfoces plugins to be peer dependent from API module instead of referencing to `bool.js/api`.
+* Changes the way dependencies are loaded into bool.js
+* Deprecate integrity checking method in plugins. Now is done internally.
+
+_Side notes_ We welcome [@winos](https://github.com/winos) to the Bool.js team. As the greatest contributor in this iteration, he named this version.
+
 ### 0.5.9
 
 * Updated booljs-api

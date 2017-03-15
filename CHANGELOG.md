@@ -2,6 +2,14 @@
 
 _Changelog_
 
+### 0.6.2
+
+* Now CLI resides in [`booljs-cli`](https://npmjs.com/package/booljs-cli).
+
+### 0.6.1
+
+* Updated booljs-api: Fixed an error where plugin's dependencies weren't being loaded.
+
 ## 0.6.0: (I Can't Get No) Satisfaction
 [_10 May 2016_](https://github.com/BoolJS/booljs/commits/v0.6.0)
 

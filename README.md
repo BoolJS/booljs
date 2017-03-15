@@ -71,7 +71,7 @@ Now, you're ready to start.
 Simple as this: install bool.js in your computer through npm.
 
 ```bash
-sudo npm install -g bool.js
+sudo npm install -g booljs-cli
 ```
 
 Then, use the CLI to start the application. Fill out the namespace (yes, we use namespaces, I'll tell you about this later) and the directory where your project is being created. In case you don't mention a path, CLI will use the one you're being located.

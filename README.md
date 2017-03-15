@@ -1,5 +1,5 @@
-<a href="http://booljs.co"><img width="200px" src="https://cdn.rawgit.com/BoolJS/booljs/master/logo.svg" alt="Bool.js" /></a>
-<a href="https://travis-ci.org/booljs/booljs"><img align="right" src="https://travis-ci.org/BoolJS/booljs.svg?branch=master" alt="Build status" /></a>
+<a href="http://bool.js.org"><img width="200px" src="https://cdn.rawgit.com/BoolJS/booljs/master/logo.svg" alt="Bool.js" /></a>
+<a href="https://travis-ci.org/BoolJS/booljs"><img align="right" src="https://travis-ci.org/BoolJS/booljs.svg?branch=master" alt="Build status" /></a>
 
 [![Dependencies status for bool.js](https://david-dm.org/booljs/booljs.svg)](https://david-dm.org/booljs/booljs) [![devDependency Status](https://david-dm.org/booljs/booljs/dev-status.svg)](https://david-dm.org/booljs/booljs#info=devDependencies) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs) [![Inline docs](http://inch-ci.org/github/booljs/booljs.svg?branch=master)](http://inch-ci.org/github/booljs/booljs) [![Join the chat at https://gitter.im/BoolJS/booljs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BoolJS/booljs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 

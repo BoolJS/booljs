@@ -1,20 +1,16 @@
 /* global describe, before, it */
 'use strict';
 
-describe('Configuration', function(){
-    var booljs;
+const booljs = require('..');
 
-    before(function(){
-        booljs = require('..');
-    });
+describe('Configuration', () => {
+    it(
+        'read and load configuration files into instance',
+        done => { booljs('com.example.api').readConfigurations(done) }
+    );
 
-    it('read and load configuration files into instance', function(done){
-        booljs('com.example.api').readConfigurations(done);
-    });
-
-    it('return a promise', function(){
-        return booljs('com.example.api2').setBase(
-            'example'
-        ).readConfigurations();
-    });
+    it(
+        'return a promise',
+        () => booljs('com.example.api2').setBase('example').readConfigurations()
+    );
 });

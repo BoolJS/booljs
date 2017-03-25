@@ -28,7 +28,7 @@
     "async": "^2.2.0",
     "booljs-express": "^0.5.3",
     "booljs-nomodel": "^0.3.1",
-    "booljs.api": "^0.3.2",
+    "booljs.api": "^0.4.0",
     "coffee-script": "^1.12.4",
     "cson": "^4.0.0",
     "jsonfile": "^2.4.0",

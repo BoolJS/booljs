@@ -1,16 +1,11 @@
-/* global describe, before, it */
 'use strict';
 
-const booljs = require('..');
+const Bool = require('..');
 
 describe('Configuration', () => {
-    it(
-        'read and load configuration files into instance',
-        done => { booljs('com.example.api').readConfigurations(done) }
-    );
-
-    it(
-        'return a promise',
-        () => booljs('com.example.api2').setBase('example').readConfigurations()
-    );
+    it('Reads and loads configuration files into instance', () => {
+        return new Bool('com.example.api2')
+            .setBase('example')
+            .readConfigurations();
+    });
 });

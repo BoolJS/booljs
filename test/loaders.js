@@ -1,13 +1,11 @@
-/* global describe, before, it */
 'use strict';
 
-describe('Loaders', function () {
-    var api;
+const Bool = require('..');
 
-    before(function () { api = require('..')('com.example.api'); });
+describe('Loaders', () => {
+    let api;
 
-    it('fetch models', function () { return api.loadDatabase(); });
-
-    it('fetch components', function () { return api.loadComponents(); });
-
+    before(() => (api = new Bool('com.example.api')));
+    it('fetch models', () => api.loadDatabase());
+    it('fetch components', () => api.loadComponents());
 });

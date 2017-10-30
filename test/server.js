@@ -1,11 +1,8 @@
 /* global describe, before, it */
 'use strict';
 
-describe('Server', function () {
-    var app;
+const Bool = require('..');
 
-    before(function () { app = require('..')('com.example.api'); });
-
-    it('starts the default server', function () { return app.bootServer(); });
-
-});
+describe('Server', () => it(
+    'starts the default server', () => new Bool('com.example.api').bootServer()
+));

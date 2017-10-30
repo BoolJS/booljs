@@ -1,9 +1,9 @@
 /* global describe, it */
 'use strict';
 
-const booljs  = require('..');
+const Bool = require('..');
 
 describe('API', () => it('initializes application instance', () => {
-        let app = booljs('com.example.api');
-        app.setBase('example');
+    let app = new Bool('com.example.api');
+    return app.setBase('example');
 }));

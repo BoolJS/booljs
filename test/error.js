@@ -1,13 +1,8 @@
-/* global describe, it */
 'use strict';
 
-describe('BoolError', function () {
+const Bool = require('..');
 
-    it('is added to app components', function (done) {
-        var booljs  = require('..')
-        ,   app     = booljs('com.example.api');
-
-        app.insertBoolError(done);
-    });
-
-});
+describe('BoolError', () => it(
+    'is added to app components', () => new Bool('com.example.api')
+        .insertBoolError()
+));

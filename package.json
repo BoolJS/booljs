@@ -1,6 +1,6 @@
 {
   "name": "booljs",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "description": "Bool MVC Framework - Bootstraping Unit",
   "main": "lib/index.js",
   "license": "GPL-3.0",
@@ -30,16 +30,15 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "jsdoc": "^3.4.3",
-    "mocha": "^3.2.0"
+    "mocha": "^3.5.3"
   },
   "dependencies": {
     "async": "^2.2.0",
     "booljs.api": "^0.5.2",
-    "booljs.express": "^0.6.0-pre",
+    "booljs.express": "^0.6.1",
     "booljs.nomodel": "^0.4.3",
     "coffee-script": "^1.12.4",
     "cson": "^4.0.0",
-    "jsonfile": "^2.4.0",
     "readyness": "^0.1.0"
   },
   "engines": {

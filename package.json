@@ -22,8 +22,8 @@
     "url": "http://github.com/booljs/booljs"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "chai-as-promised": "^6.0.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
     "codecov": "^3.0.0",
     "cross-env": "^5.0.1",
     "eslint": "^4.2.0",
@@ -34,7 +34,7 @@
     "eslint-plugin-standard": "^3.0.1",
     "istanbul": "^0.4.5",
     "jsdoc": "^3.4.3",
-    "mocha": "^3.5.3"
+    "mocha": "^4.0.1"
   },
   "dependencies": {
     "async": "^2.2.0",

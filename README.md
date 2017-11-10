@@ -1,9 +1,20 @@
-<a href="http://bool.js.org"><img width="200px" src="https://cdn.rawgit.com/BoolJS/booljs/master/logo.svg" alt="Bool.js" /></a>
-<a href="https://travis-ci.org/BoolJS/booljs"><img align="right" src="https://travis-ci.org/BoolJS/booljs.svg?branch=master" alt="Build status" /></a>
+<p align="center"><img src="https://cdn.rawgit.com/BoolJS/booljs/master/logo.svg" width="50%"></p>
 
-[![Dependencies status for booljs](https://david-dm.org/booljs/booljs.svg)](https://david-dm.org/booljs/booljs) [![devDependency Status](https://david-dm.org/booljs/booljs/dev-status.svg)](https://david-dm.org/booljs/booljs#info=devDependencies) [![Code Climate](https://codeclimate.com/github/BoolJS/booljs/badges/gpa.svg)](https://codeclimate.com/github/BoolJS/booljs) [![Inline docs](http://inch-ci.org/github/booljs/booljs.svg?branch=master)](http://inch-ci.org/github/booljs/booljs) [![Join the chat at https://gitter.im/BoolJS/booljs](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BoolJS/booljs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+<p align="center">
+    <a href="https://travis-ci.org/BoolJS/booljs"><img src="https://img.shields.io/travis/BoolJS/booljs.svg?style=flat-square" alt="Build Status"></a>
+    <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-GPL%20v3-green.svg?style=flat-square" alt="License"></a>
+    <a href="https://github.com/BoolJS/booljs/releases"><img src="http://github-release-version.herokuapp.com/github/BoolJS/booljs/release.svg?style=flat-square" alt="Latest Stable Version"></a>
+    <a href="https://david-dm.org/booljs/booljs"><img src="https://img.shields.io/david/booljs/booljs.svg?style=flat-square" alt="Dependency status"></a>
+    <a href="https://david-dm.org/booljs/booljs?type=dev"><img src="https://img.shields.io/david/dev/booljs/booljs.svg?style=flat-square" alt="devDependency status"></a>
+    <a href="https://david-dm.org/booljs/booljs?type=peer"><img src="https://img.shields.io/david/peer/booljs/booljs.svg?style=flat-square" alt="peerDependency status"></a>
+    <a href="https://codeclimate.com/github/BoolJS/booljs"><img src="https://img.shields.io/codeclimate/github/BoolJS/booljs.svg?style=flat-square" alt="Code Climate"></a>
+    <a href="http://inch-ci.org/github/booljs/booljs"><img src="http://inch-ci.org/github/booljs/booljs.svg?branch=master" alt="Inline docs"></a>
+    <a href="https://gitter.im/BoolJS/booljs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge"><img src="https://img.shields.io/gitter/room/booljs/booljs.svg?style=flat-square" alt="Join the chat at https://gitter.im/BoolJS/booljs"></a>
+</p>
 
-[![Bool.js NPM icon](https://nodei.co/npm/booljs.png)](https://npmjs.com/packages/booljs)
+<p align="center">
+    <a href="https://npmjs.com/packages/booljs"><img src="https://nodei.co/npm/booljs.png" alt="Bool.js NPM icon"></a>
+</p>
 
 # Getting Started with bool.js
 

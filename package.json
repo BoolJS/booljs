@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "async": "^2.2.0",
-    "booljs.api": "^0.5.2",
+    "booljs.api": "^0.5.3",
     "booljs.express": "^0.6.1",
     "booljs.nomodel": "^0.4.3",
     "coffee-script": "^1.12.4",

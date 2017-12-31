@@ -39,7 +39,7 @@
   "dependencies": {
     "async": "^2.2.0",
     "booljs.api": "^0.5.4",
-    "booljs.express": "^0.6.1",
+    "booljs.express": "^0.6.2",
     "booljs.nomodel": "^0.4.4",
     "coffee-script": "^1.12.4",
     "cson": "^4.0.0",

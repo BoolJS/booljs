@@ -10,7 +10,7 @@
     "url": "https://bool.js.org/developers/pandres95"
   },
   "scripts": {
-    "coverage": "nyc --reporter=lcov --reporter=text-lcov npm run unit | codecov",
+    "coverage": "nyc --reporter=lcov npm run unit -- -R dot && codecov",
     "lint": "eslint **/*.js",
     "unit": "cross-env NODE_ENV=test mocha --exit --timeout 5000 --recursive test",
     "test": "npm run lint && npm run unit && npm run coverage",

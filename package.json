@@ -1,6 +1,6 @@
 {
   "name": "booljs",
-  "version": "0.7.14",
+  "version": "0.7.15",
   "description": "Bool MVC Framework - Bootstraping Unit",
   "main": "lib/index.js",
   "license": "GPL-3.0",
@@ -39,7 +39,7 @@
   "dependencies": {
     "async": "^2.2.0",
     "booljs.api": "^0.5.4",
-    "booljs.express": "^0.6.2",
+    "booljs.express": "^0.6.3",
     "booljs.nomodel": "^0.4.4",
     "coffee-script": "^1.12.4",
     "cson": "^4.0.0",

@@ -37,8 +37,8 @@
     "nyc": "^11.9.0"
   },
   "dependencies": {
+    "@booljs/express": "^0.6.6",
     "booljs.api": "^0.5.4",
-    "booljs.express": "^0.6.3",
     "booljs.nomodel": "^0.4.4",
     "coffeescript": "^2.3.2",
     "cson": "^4.0.0",

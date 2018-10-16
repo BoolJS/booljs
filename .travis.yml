@@ -1,3 +1,11 @@
 language: node_js
 node_js:
   - lts/*
+
+deploy:
+  provider: npm
+  email: hola@pablodorado.com
+  api_key: $NPM_API_KEY
+  on:
+    branch: master
+    tags: true

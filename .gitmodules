@@ -1,3 +1,0 @@
-[submodule "example"]
-	path = example
-	url = http://github.com/booljs/booljs-boilerplate.git

@@ -1,6 +1,6 @@
 {
   "name": "booljs",
-  "version": "0.8.3",
+  "version": "0.8.4",
   "description": "Bool MVC Framework - Bootstraping Unit",
   "main": "lib/index.js",
   "license": "GPL-3.0",

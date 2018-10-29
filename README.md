@@ -24,7 +24,7 @@ This is the very absolute beginners guide you'll need to understand how you can 
 ## Prerequisites
 
 * **Node.js v8.9.0 (LTS)**: No, you can't escape from this, as our incredibly modern API uses the latest features of the ES6 standard, such as classes, async syntax and everything else in the middle. Also, is highly recommended to keep in line with LTS support.
-* **npm 5+**: Is now necessary, because plugins peer-depend on [bool.js API](https://github.com/booljs/booljs-api) and npm3+ enforces these dependencies to be fulfilled.
+* **npm 5+**: Is now necessary, because plugins peer-depend on [bool.js API](https://github.com/booljs/booljs-api) and npm5+ enforces these dependencies to be fulfilled.
 * **Git 1.9.0 or later**: Recommended for having control in every aspect of your project as it rapidly grows.
 
 ## Let's begin

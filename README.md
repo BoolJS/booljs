@@ -3,7 +3,7 @@
 <p align="center">
     <a href="https://travis-ci.org/BoolJS/booljs"><img src="https://img.shields.io/travis/BoolJS/booljs.svg?style=flat-square" alt="Build Status"></a>
     <a href="LICENSE.md"><img src="https://img.shields.io/badge/License-GPL%20v3-green.svg?style=flat-square" alt="License"></a>
-    <a href="https://github.com/BoolJS/booljs/releases"><img src="http://github-release-version.herokuapp.com/github/BoolJS/booljs/release.svg?style=flat-square" alt="Latest Stable Version"></a>
+    <a href="https://github.com/BoolJS/booljs/releases"><img src="https://img.shields.io/github/release/BoolJS/booljs.svg?style=flat-square" alt="Latest Stable Version"></a>
     <a href="https://david-dm.org/booljs/booljs"><img src="https://img.shields.io/david/booljs/booljs.svg?style=flat-square" alt="Dependency status"></a>
     <a href="https://david-dm.org/booljs/booljs?type=dev"><img src="https://img.shields.io/david/dev/booljs/booljs.svg?style=flat-square" alt="devDependency status"></a>
     <a href="https://david-dm.org/booljs/booljs?type=peer"><img src="https://img.shields.io/david/peer/booljs/booljs.svg?style=flat-square" alt="peerDependency status"></a>
@@ -24,7 +24,7 @@ This is the very absolute beginners guide you'll need to understand how you can 
 ## Prerequisites
 
 * **Node.js v8.9.0 (LTS)**: No, you can't escape from this, as our incredibly modern API uses the latest features of the ES6 standard, such as classes, async syntax and everything else in the middle. Also, is highly recommended to keep in line with LTS support.
-* **npm 5+**: Is now necessary, because plugins peer-depend on [bool.js API](https://github.com/booljs/booljs-api) and npm3+ enforces these dependencies to be fulfilled.
+* **npm 5+**: Is now necessary, because plugins peer-depend on [bool.js API](https://github.com/booljs/booljs-api) and npm5+ enforces these dependencies to be fulfilled.
 * **Git 1.9.0 or later**: Recommended for having control in every aspect of your project as it rapidly grows.
 
 ## Let's begin
@@ -96,7 +96,7 @@ Follow the instructions and you're done.
 
 ## First run
 
-> Basic code comes with an example of: configuration files, found in… configuration (D'Oh!) folder, controllers, DAO (or business logic, if you think in a better name than ours, let us know [here](mailto:hello@booljs.co)), models, and plugins.
+> The basic code comes with an example of: configuration files, found in… configuration (D'Oh!) folder, controllers, DAO (or business logic, if you think in a better name than ours, let us know [here](mailto:hello@booljs.co)), models, and plugins.
 
 We prepared a _kitten free_ sample using a dog store, where you can see how to create a resource. Just type `node index.js` and you're in.
 
@@ -104,7 +104,7 @@ We prepared a _kitten free_ sample using a dog store, where you can see how to c
 
 > TL;DR
 >
-> Bool.js code are plain functions with at least one parameter: `app`, which is a reference to the namespace-based components, from where you can instantiate your code. Those return the objects you can use everywhere in your application. They can be controllers, DAO, models, routes and plugins.
+> Bool.js code is plain functions with at least one parameter: `app`, which is a reference to the namespace-based components, from where you can instantiate your code. Those return the objects you can use everywhere in your application. They can be controllers, DAO, models, routes and plugins.
 >
 > Models and routes are very strict in their structure, as they're the interfaces to connect the rest of the architecture and follow the specifications of the database and web server drivers. The others (unless specified) are designed up to your criteria, following certain code styles and conventions.
 >
@@ -142,11 +142,11 @@ And so on…
 
 A module is basically a function containing executable code, which passes parameters referencing the application's other components through namespaces, as well as other parameters: database drivers, libraries, etc. You can recognize them as code files into the following folders: `controllers`, `dao`, `plugins`, `models` and `routes`.
 
-They consist in three parts: the header definitions, the code body and the returning section. Now, let's examine very carefully each one of these.
+They consist of three parts: the header definitions, the code body and the returning section. Now, let's examine very carefully each one of these.
 
 #### Header section
 
-This is the part of code defining what is going to be exported as a component. Consists on a `use strict` header, because we like to be strict, but safe; and a `module.exports` sentence returning a function. The function takes at least one parameter: can be called whatever you want, but we recommend to call it `app`, so you will know it is about the application's status.
+This is the part of code defining what is going to be exported as a component. Consists of a `use strict` header, because we like to be strict, but safe; and a `module.exports` sentence returning a function. The function takes at least one parameter: can be called whatever you want, but we recommend to call it `app`, so you will know it is about the application's status.
 
 ```js
 'use strict';
@@ -162,7 +162,7 @@ Essentially is the part where you define your variables. Here you are free to do
 
 1. Don't use `require`. The reason to make bool.js namespace-based is precisely to avoid making complicated calls to files. If you have a recurring piece of code you want to use, then create a module of it in the `plugins` folder, and then you can call it instantiating the component `app.plugins.WhateverYouCanCallItPlugin`.
 2. Never declare variables or running code outside code body, before or after the function definition. This is an anti-pattern as can turn your code non-stateless, and eventually cause troubles.
-3. When you are importing application components, remember to point constructors: then, in the code body, instantiate them, so you'll mantain your code stateless.
+3. When you are importing application components, remember to point constructors: then, in the code body, instantiate them, so you'll maintain your code statelessly.
 
 A good example of achieving this, is the definition section of a controller.
 
@@ -209,7 +209,7 @@ return  {
 };
 ```
 
-Altough we use to return functions in a literal object, a good (and sometimes cleaner) choice might be returning a reference to `this` and declaring functions as fields of the function. This is something like the following example.
+Although we use to return functions in a literal object, a good (and sometimes cleaner) choice might be returning a reference to `this` and declaring functions as fields of the function. This is something like the following example.
 
 ```js
 this.list = function (req, res, next) {
@@ -239,7 +239,7 @@ this.update = function (req, res, next) {
 return this;
 ```
 
-This way is often used in mongoose models, because we are returning an Schema instance, and into it, we declare handy functions and mongoose plugins.
+This way is often used in mongoose models, because we are returning a Schema instance, and into it, we declare handy functions and mongoose plugins.
 
 ### The router stuff
 
@@ -272,7 +272,7 @@ module.exports = function (app) {
 
 #### Policy types: mandatory and omittable.
 
-None of the policies are required to be included in the route's definition. However, middleware are required to specify whether they can be activated or disabled. Mandatory policies are those which need to exist in the route's definition with an specific value to activate the middleware in the route. Contrary to first ones, omittable policies are those which being declared in the route's definition disable the behaviour of the middleware for an specific route.
+None of the policies are required to be included in the route's definition. However, middleware is required to specify whether they can be activated or disabled. Mandatory policies are those which need to exist in the route's definition with a specific value to activate the middleware in the route. Contrary to first ones, omittable policies are those which were declared in the route's definition disable the behaviour of the middleware for a specific route.
 
 I apply `booljs-cors` and `booljs-oauth` plugins to an API. First one defines a Middleware with mandatory policies, while OAuth plugin is omittable. In that case, if I define these routes:
 
@@ -291,7 +291,7 @@ I apply `booljs-cors` and `booljs-oauth` plugins to an API. First one defines a 
 }
 ```
 
-OAuth will execute in first route, because its disable policy `public: true` doesn't appear. In the second case, because CORS type is mandatory, won't set headers, however, it won't require a Bearer authorization, because we've declared the disable policy.
+OAuth will execute in the first route, because its disable policy `public: true` doesn't appear. In the second case, because CORS type is mandatory, won't set headers, however, it won't require a Bearer authorization, because we've declared the disable policy.
 
 ### Controllers
 
@@ -301,9 +301,9 @@ Each function passes two essential parameters: the `request` information, as wel
 
 If included in the server's implementation (default's implementation includes one), you can apply views, which are prebuilt responses for API calls.
 
-Also, is recommended that routers don't reference more than one controller, because this will cause multiple instances of them, and it's recommended to have just one of them. To avoid issues, load references in code body, not in definitions section.
+Also, is recommended that routers don't reference more than one controller, because this will cause multiple instances of them, and it's recommended to have just one of them. To avoid issues, load references in code body, not in the definitions section.
 
-Finally, avoid combining business logic code (field validations, complex joining operations). To achieve that goal, you must code these operations in DAO components: they are the main point to the back-end of the API, and should be carefully documented for project's developers or other's projects which use your project's resources via calling them in API requires.
+Finally, avoid combining the business logic code (field validations, complex joining operations). To achieve that goal, you must code these operations in DAO components: they are the main point to the back-end of the API, and should be carefully documented for project's developers or other's projects which use your project's resources via calling them in API requires.
 
 ```js
 'use strict';
@@ -338,7 +338,7 @@ DAO components are the most important part of the bool.js architecture: serve as
 
 Code body must return an object. Unless specified by a requiring plugin (such as `booljs-oauth`), the structure is completely free. However, we keep recommending you to use the code conventions for definition section.
 
-As we told you before, you can use a lot of resource, specially those coming from the namespace `app.utils`: they are utilities you declare from native libraries in node.js, and aren't defined as plugins, so they work as expected in their original documentation.
+As we told you before, you can use a lot of resources, specially those coming from the namespace `app.utils`: they are utilities you declare from native libraries in node.js, and aren't defined as plugins, so they work as expected in their original documentation.
 
 ## FAQ
 

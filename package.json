@@ -24,21 +24,21 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "codecov": "^3.1.0",
-    "cross-env": "^5.2.0",
+    "codecov": "^3.6.1",
+    "cross-env": "^5.2.1",
     "eslint": "^4.19.1",
     "eslint-config-standard": "^10.2.1",
-    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^5.1.0",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
-    "jsdoc": "^3.4.3",
+    "jsdoc": "^3.6.3",
     "mocha": "^4.1.0",
-    "nyc": "^11.9.0"
+    "nyc": "^14.1.1"
   },
   "dependencies": {
     "@booljs/api": "^0.6.3",
-    "coffeescript": "^2.3.2",
+    "coffeescript": "^2.4.1",
     "cson": "^4.0.0",
     "readyness": "^0.1.0"
   },

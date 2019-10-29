@@ -10,5 +10,9 @@ module.exports = {
         indent: [ 'error', 4 ],
         semi: [ 'error', 'always' ],
         'no-multi-spaces': 0
+    },
+    parser: 'babel-eslint',
+    parserOptions: {
+        ecmaVersion: 11
     }
 };

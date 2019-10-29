@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "@booljs/api": "^0.6.3",
+    "chalk": "^2.4.2",
     "coffeescript": "^2.4.1",
     "cson": "^5.1.0",
     "readyness": "^0.1.0"

@@ -4,6 +4,6 @@
 const Bool = require('..');
 
 describe('API', () => it('initializes application instance', () => {
-    let app = new Bool('com.example.api');
+    const app = new Bool('com.example.api');
     return app.setBase('example');
 }));

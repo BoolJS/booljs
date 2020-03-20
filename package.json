@@ -1,6 +1,6 @@
 {
   "name": "booljs",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Bool MVC Framework - Bootstraping Unit",
   "main": "lib/index.js",
   "license": "GPL-3.0",
@@ -12,7 +12,7 @@
   "scripts": {
     "coverage": "nyc --reporter=lcov npm run unit -- -R dot && codecov",
     "lint": "eslint \"**/**/*.js\"",
-    "unit": "cross-env NODE_ENV=test mocha --exit --timeout 5000 --recursive test",
+    "unit": "cross-env NODE_ENV=test mocha",
     "test": "npm run lint && npm run unit && npm run coverage",
     "predoc": "rm -rf doc",
     "doc": "jsdoc -c jsdoc.json"
@@ -22,27 +22,28 @@
     "url": "http://github.com/booljs/booljs"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.3",
+    "babel-eslint": "^10.1.0",
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
-    "codecov": "^3.6.1",
+    "codecov": "^3.6.5",
     "cross-env": "^5.2.1",
-    "eslint": "^6.6.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
     "jsdoc": "^3.6.3",
-    "mocha": "^6.2.2",
+    "mocha": "^7.1.1",
     "nyc": "^14.1.1"
   },
   "dependencies": {
     "@booljs/api": "^0.6.3",
     "chalk": "^2.4.2",
-    "coffeescript": "^2.4.1",
+    "coffeescript": "^2.5.1",
     "cson": "^5.1.0",
-    "readyness": "^0.1.0"
+    "readyness": "^0.1.0",
+    "yaml": "^1.8.2"
   },
   "engines": {
     "node": ">=12.0.0",

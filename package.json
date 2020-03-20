@@ -42,7 +42,8 @@
     "chalk": "^2.4.2",
     "coffeescript": "^2.5.1",
     "cson": "^5.1.0",
-    "readyness": "^0.1.0"
+    "readyness": "^0.1.0",
+    "yaml": "^1.8.2"
   },
   "engines": {
     "node": ">=12.0.0",

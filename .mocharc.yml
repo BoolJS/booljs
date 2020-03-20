@@ -1,0 +1,9 @@
+colors: true
+diff: true
+timeout: 10000
+slow: 1000
+spec:
+  - test/**/*.js
+package: package.json
+recursive: true
+exit: true
